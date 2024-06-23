@@ -32,6 +32,12 @@ Put your cursor on a word and press the `F2` key to search duckduckgo for the wo
 Select visually and press `\s` (that is not `<Leader>s`) to search duckduckgo for the content of the visual selection.
 Select visually and press `\p` (that is not `<Leader>p`) to submit the content of the visual selection to 0x0.st pastebin service.
 
+# DDG Demo
 ![output-ddg-2](https://github.com/wolandark/vim-ddg/assets/107309764/03e05a9b-4475-4c18-b9b0-d9cb48ecf354)
+
+# PB Demo
+![Peek 2024-06-24 01-51](https://github.com/wolandark/vim-ddgpb/assets/107309764/45c579ea-ac12-4c65-b6cf-dc09c59b70c9)
+Here I'm using tmux-fzf-url plugin in tmux to access the url and open it in the browser directly. <br>
+However you can always get link frm `:messages`
 
 # Enjoy
