@@ -37,7 +37,12 @@ Select visually and press `\p` (that is not `<Leader>p`) to submit the content o
 
 # PB Demo
 ![Peek 2024-06-24 01-51](https://github.com/wolandark/vim-ddgpb/assets/107309764/45c579ea-ac12-4c65-b6cf-dc09c59b70c9)
+
 Here I'm using tmux-fzf-url plugin in tmux to access the url and open it in the browser directly. <br>
-However you can always get link frm `:messages`
+
+However you can always get the link from `:messages` <br>
+Or better:  <br>
+`:redir @a | 1messages | redir END`
+to send the last msg to the `a` register.
 
 # Enjoy
