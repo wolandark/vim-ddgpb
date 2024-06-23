@@ -43,8 +43,11 @@ Here I'm using tmux-fzf-url plugin in tmux to access the url and open it in the 
 However vim-ddgpb copies the url to the plus register by default. So you can paste it anywhere.
 
 you can always get the link from `:messages` too <br>
+
 For example:  <br>
+
 `:redir @a | 1messages | redir END`
+
 to send the last msg to the `a` register.
 
 # Enjoy
