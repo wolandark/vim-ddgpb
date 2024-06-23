@@ -44,7 +44,10 @@ def PasteBin(): void
     var cmd = 'curl -s -F "file=@-" 0x0.st'
     var result = system(cmd, g:selection)
     var url = substitute(result, '\n', '', 'g')
-    echom "Uploaded to: " .. url
+	redir @+ 
+	echom url
+	redir END
+	echom "Uploaded to: " .. url "And copied to @+"
 enddef
 
 # Search DuckDuckGo
@@ -79,3 +82,4 @@ vnoremap \p :Binint<CR>
 nnoremap <F2> :DDG<CR>
 
 defcompile
+
