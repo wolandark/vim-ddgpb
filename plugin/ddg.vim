@@ -34,10 +34,10 @@ endif
 
 g:loaded_ddg = 1
 
-# if v:version < 802
-	# echo "This plugin requires Vim 8.2 or later"
-	# finish
-# endif
+if v:version < 900
+	echo "This plugin requires Vim 9.0 or later"
+	finish
+endif
 
 def GetVisualSelection(): void
 	var start = getpos("'<")
