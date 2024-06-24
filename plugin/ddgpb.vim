@@ -30,13 +30,22 @@ vim9script
 if exists("g:loaded_ddgpb")
 	finish
 endif
-
 g:loaded_ddgpb = 1
 
 if v:version < 900
 	echo "This plugin requires Vim 9.0 or later"
 	finish
 endif
+
+# Utility Function To Get The Visual Selection
+def PassVisualSelection(): void
+	var start = getpos("'<")
+	var end = getpos("'>")
+	var lines = getline(start[1], end[1])
+	lines[-1] = lines[-1][ : end[2] - (&selection == 'inclusive' ? 1 : 2)]
+	lines[0] = lines[0][start[2] - 1 : ]
+	g:selection = join(lines, "\n")
+enddef
 
 # PasteBin 
 def PasteBin(): void
@@ -51,15 +60,6 @@ def PasteBin(): void
 enddef
 
 # Search DuckDuckGo
-def PassVisualSelection(): void
-	var start = getpos("'<")
-	var end = getpos("'>")
-	var lines = getline(start[1], end[1])
-	lines[-1] = lines[-1][ : end[2] - (&selection == 'inclusive' ? 1 : 2)]
-	lines[0] = lines[0][start[2] - 1 : ]
-	g:selection = join(lines, "\n")
-enddef
-
 def SearchDuckDuckGoVisually()
 	PassVisualSelection()
 	 var url = 'https://duckduckgo.com/?q=' .. g:selection
@@ -82,4 +82,3 @@ vnoremap \p :Binint<CR>
 nnoremap <F2> :DDG<CR>
 
 defcompile
-
