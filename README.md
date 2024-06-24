@@ -1,4 +1,4 @@
-# vim-ddg
+# vim-ddgpb
 This plugin with it's horrible name does two things:
 - Search DuckDuckGo from Vim
   - With word under the cursor
