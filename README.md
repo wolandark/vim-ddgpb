@@ -27,7 +27,7 @@ for on-deman loading do:
 `:packadd vim-ddgpb` 
 
 # Usage
-Put your cursor on a word and press the `F2` key to search duckduckgo for the word under the cursor. 
+Put your cursor on a word and press the `F3` key to search duckduckgo for the word under the cursor. 
 
 Select visually and press `\s` (that is not `<Leader>s`) to search duckduckgo for the content of the visual selection.
 Select visually and press `\p` (that is not `<Leader>p`) to submit the content of the visual selection to 0x0.st pastebin service.
