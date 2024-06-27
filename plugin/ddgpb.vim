@@ -79,6 +79,6 @@ command! -range Binint call PasteBin()
 # Mappings
 vnoremap \s :DDGV<CR>
 vnoremap \p :Binint<CR>
-nnoremap <F2> :DDG<CR>
+nnoremap <F3> :DDG<CR>
 
 defcompile
