@@ -7,6 +7,7 @@ This plugin with it's horrible name does two things:
 
 # Dependency
 This plugin doesn't depend on anything other than the `xdg-open`, `curl` and Vim9 or newer. <br>
+However for using the terminal browser feature, you will need tmux and w3m.
 
 This plugin is written in vim9script and therefore requires Vim 9.0+. <br> You can check wether your Vim has vim9script support with  `echo has('vim9script')`. <br>
 If Vim returns `1`, then you have what this plugin needs.
@@ -28,8 +29,10 @@ for on-deman loading do:
 
 # Usage
 Put your cursor on a word and press the `F3` key to search duckduckgo for the word under the cursor. 
+Put your cursor on a word and press the `F4` key to search duckduckgo for the word under the cursor with w3m in a tmux pane. 
 
 Select visually and press `\s` (that is not `<Leader>s`) to search duckduckgo for the content of the visual selection.
+Select visually and press `\t` (that is not `<Leader>t`) to search duckduckgo for the content of the visual selection with w3m in a tmux pane.
 Select visually and press `\p` (that is not `<Leader>p`) to submit the content of the visual selection to 0x0.st pastebin service.
 
 # DDG Demo
