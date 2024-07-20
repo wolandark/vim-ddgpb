@@ -93,3 +93,4 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 
 ==============================================================================
 
+vim:tw=78:ts=8:noet:ft=help:norl:
