@@ -1,0 +1,95 @@
+*ddgpb.txt*     A Simple Plugin To Search DuckDuckGo OR Send Visual Selection To Paste Bin
+
+Author: wolandark
+Copyright: © 2024 wolandark
+License: GNU General Public License v3.0 or later
+Plugin Version: 1.0
+Required Vim Version: 9.0 or later
+
+==============================================================================
+CONTENTS                                                *ddgpb-contents*
+
+1. Introduction ...................................... |ddgpb-intro|
+2. Installation ...................................... |ddgpb-install|
+3. Commands .......................................... |ddgpb-commands|
+4. Key Mappings ...................................... |ddgpb-mappings|
+5. Functions ......................................... |ddgpb-functions|
+6. License ........................................... |ddgpb-license|
+
+==============================================================================
+1. Introduction                                       *ddgpb-intro*
+
+This is a simple Vim plugin that allows you to either search DuckDuckGo or send
+a visual selection to a paste bin service. It requires Vim 9.0 or later to
+function correctly.
+
+==============================================================================
+2. Installation                                       *ddgpb-install*
+
+To install this plugin, you can use any Vim plugin manager, such as vim-plug,
+Vundle, or Pathogen. Below is an example using vim-plug:
+
+    ```vim
+    Plug 'username/ddgpb'
+    ```
+
+After adding the plugin to your configuration file, run `:PlugInstall` to
+install it.
+
+==============================================================================
+3. Commands                                           *ddgpb-commands*
+
+The plugin provides the following commands:
+
+| Command      | Description                                    |
+|--------------|------------------------------------------------|
+| :Binint      | Sends the visual selection to Paste Bin        |
+| :DDGV        | Searches DuckDuckGo with the visual selection  |
+| :DDGVT       | Searches DuckDuckGo visually in a tmux pane    |
+| :DDG         | Searches DuckDuckGo with the word under cursor |
+| :DDGT        | Searches DuckDuckGo in a tmux pane             |
+
+==============================================================================
+4. Key Mappings                                       *ddgpb-mappings*
+
+The plugin defines the following key mappings:
+
+| Mode | Mapping    | Action                                     |
+|------|------------|--------------------------------------------|
+| v    | \p         | Calls :Binint                              |
+| v    | \s         | Calls :DDGV                                |
+| v    | \t         | Calls :DDGVT                               |
+| n    | <F3>       | Calls :DDG                                 |
+| n    | <F4>       | Calls :DDGT                                |
+
+==============================================================================
+5. Functions                                          *ddgpb-functions*
+
+The plugin includes these utility functions:
+
+| Function                          | Description                                    |
+|-----------------------------------|------------------------------------------------|
+| PassVisualSelection()             | Gets the current visual selection              |
+| PasteBin()                        | Sends the visual selection to Paste Bin        |
+| SearchDuckDuckGoVisually()        | Searches DuckDuckGo with the visual selection  |
+| SearchDuckDuckGo()                | Searches DuckDuckGo with the word under cursor |
+| SearchDuckDuckGoTmux()            | Searches DuckDuckGo in a tmux pane             |
+| SearchDuckDuckGoVisuallyTmux()    | Searches DuckDuckGo visually in a tmux pane    |
+
+==============================================================================
+6. License                                            *ddgpb-license*
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+
+==============================================================================
+
