@@ -1,13 +1,14 @@
 # vim-ddgpb
 This plugin with it's horrible name does two things:
-- Search DuckDuckGo from Vim
+- Search DuckDuckGo from Vim (in system GUI browser or in a tmux pane using w3m)
   - With word under the cursor
   - with visual selection
 - Submit the visual selection to 0x0.st pastebin 
 
 # Dependency
 This plugin doesn't depend on anything other than the `xdg-open`, `curl` and Vim9 or newer. <br>
-However for using the terminal browser feature, you will need tmux and w3m.
+
+However, if you want to use a terminal browser for your search, you should also get tmux and w3m browser. Naturally you must be in a tmux session for those functions to work.
 
 This plugin is written in vim9script and therefore requires Vim 9.0+. <br> You can check wether your Vim has vim9script support with  `echo has('vim9script')`. <br>
 If Vim returns `1`, then you have what this plugin needs.
@@ -29,11 +30,14 @@ for on-deman loading do:
 
 # Usage
 Put your cursor on a word and press the `F3` key to search duckduckgo for the word under the cursor. 
-Put your cursor on a word and press the `F4` key to search duckduckgo for the word under the cursor with w3m in a tmux pane. 
 
-Select visually and press `\s` (that is not `<Leader>s`) to search duckduckgo for the content of the visual selection.
-Select visually and press `\t` (that is not `<Leader>t`) to search duckduckgo for the content of the visual selection with w3m in a tmux pane.
-Select visually and press `\p` (that is not `<Leader>p`) to submit the content of the visual selection to 0x0.st pastebin service.
+Put your cursor on a word and press the `F4` key to search duckduckgo for the word under the cursor in a tmux pane using w3m terminal browser. 
+
+Select visually and press `<F7>` to search duckduckgo for the content of the visual selection.
+
+Select visually and press `<F8>` to search duckduckgo for the content of the visual selection in a tmux pane using w3m terminal browser.
+
+Select visually and press `<F12>` to submit the content of the visual selection to 0x0.st pastebin service.
 
 # DDG Demo
 ![output-ddg-2](https://github.com/wolandark/vim-ddg/assets/107309764/03e05a9b-4475-4c18-b9b0-d9cb48ecf354)

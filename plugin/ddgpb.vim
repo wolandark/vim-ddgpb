@@ -83,7 +83,6 @@ def SearchDuckDuckGoVisuallyTmux()
 	call system('tmux split-window -h w3m "' .. url .. '"')
 enddef
 
-
 # Commands
 command! -range Binint call PasteBin()
 command! -range DDGV call SearchDuckDuckGoVisually()
@@ -92,10 +91,11 @@ command! DDG call SearchDuckDuckGo()
 command! DDGT call SearchDuckDuckGoTmux()
 
 # Mappings
-vnoremap \p :Binint<CR>
-vnoremap \s :DDGV<CR>
-vnoremap \t :DDGVT<CR>
+vnoremap <F12> :Binint<CR>
+vnoremap <F7> :DDGV<CR>
+vnoremap <F8> :DDGVT<CR>
 nnoremap <F3> :DDG<CR>
 nnoremap <F4> :DDGT<CR>
 
 defcompile
+
