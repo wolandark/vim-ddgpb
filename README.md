@@ -29,9 +29,9 @@ for on-deman loading do:
 `:packadd vim-ddgpb` 
 
 # Usage
-Put your cursor on a word and press the `F3` key to search duckduckgo for the word under the cursor. 
+Put your cursor on a word and press the `<F3>` key to search duckduckgo for the word under the cursor. 
 
-Put your cursor on a word and press the `F4` key to search duckduckgo for the word under the cursor in a tmux pane using w3m terminal browser. 
+Put your cursor on a word and press the `<F4>` key to search duckduckgo for the word under the cursor in a tmux pane using w3m terminal browser. 
 
 Select visually and press `<F7>` to search duckduckgo for the content of the visual selection.
 
