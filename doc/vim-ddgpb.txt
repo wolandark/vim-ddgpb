@@ -1,4 +1,5 @@
-*ddgpb.txt*     A Simple Plugin To Search DuckDuckGo OR Send Visual Selection To Paste Bin
+*ddgpb.txt* A Simple Plugin To Search DuckDuckGo OR Send Visual Selection
+To Paste Bin
 
 Author: wolandark
 Copyright: © 2024 wolandark
