@@ -98,4 +98,3 @@ nnoremap <F3> :DDG<CR>
 nnoremap <F4> :DDGT<CR>
 
 defcompile
-
